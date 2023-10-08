@@ -1,0 +1,75 @@
+
+% setup page dimensions for titlepage
+\newgeometry{left=2.4cm,right=2.4cm,bottom=2.5cm,top=2cm}
+
+% force baselineskip and parindent
+%\newlength{\tmpbaselineskip}
+%\setlength{\tmpbaselineskip}{\baselineskip}
+%\setlength{\baselineskip}{13.6pt}
+%\newlength{\tmpparindent}
+%\setlength{\tmpparindent}{\parindent}
+%\setlength{\parindent}{17pt}
+
+% first titlepage
+\pagestyle{empty}
+
+\begin{figure}[H]
+\vspace*{-2.5cm}
+\hspace*{2.5cm}
+\includegraphics[keepaspectratio, width=1.4\textwidth, right]{TemplateElements/logo_info_sec.png}
+\end{figure}
+
+
+
+\begin{center}
+
+\vspace{0.5cm}
+
+\begin{minipage}[t][5cm][s]{\textwidth}%
+\centering
+\LARGE{{{\fontsize{16}{24} \selectfont \subTitle\\}}}
+\Huge{{{\fontsize{24}{30} \selectfont \workTitle\\}}}
+\vspace{0.5cm}
+
+\end{minipage}
+
+\vspace{0.5cm}
+
+\vspace{1cm}
+
+eingereicht von:\\ 
+\fontsize{15pt}{15pt}\selectfont
+\textbf{\studentFirstName\ \studentLastName} \\
+\fontsize{11pt}{15pt}\selectfont
+\studentId
+
+\vspace{1cm}
+
+im Rahmen des Studiengangs\\ 
+\textbf{IT Security} 
+
+\vspace{1.8cm}
+
+\begin{tabular}{lll}
+Betreuer: & \advisorPreTitle\ \advisoFirstName\ \advisorLastName, \advisorPosTitle\\
+\end{tabular}
+
+\vspace{1.8cm}
+
+%\vspace{5cm}
+%\begin{tabularx}{\textwidth}[b]{p{5cm} X p{5cm}} \cline{1-1} \cline{3-3}
+%Unterschrift Autor:in & & Unterschrift Betreuer:in
+%\end{tabularx}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+\place, \dateDay.\dateMonth.\dateYear
+% & \hrulefill                  & \hrulefill                     \\
+%      & Unterschrift Autor:in & Unterschrift Betreuer:in
+\end{tabular}
+\end{table}
+
+\end{center}
+
+\restoregeometry
